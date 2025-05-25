@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxes{
+        width: 1200px;
+        height: 600px;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    /* ALL SPANS */
+    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    /* ALL BOXES */
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+        width: 250px;
+        height: 250px;
+        box-shadow: 5px 5px 5px gray;
+        background-color: rgb(214, 214, 214);
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+    .box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover{
+        transform: scale(1.1);
+    }
+    /*ALL IMAGES */
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+        height: 130px;
+        mix-blend-mode: multiply;
+        display: flex;
+        justify-content: center;
+    }
+    /* BUTTON */
+    button{
+        background-color: rgb(241, 117, 117);
+        font-size: 19px;
+        padding: 2px;
+        border-radius: 8px;
+        transition: transform 0.5s ease-in-out;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    button:hover{
+        transform: scale(1.1);
+    }
+    .heading{
+        /* display: inline; */
+        color: green;
+        margin-left: 10px;
+        text-shadow: 1px 1px 5px;
+
+    }
+    .price{
+        color: red;
+        text-shadow: 1px 1px 4px;
+        font-size: 18px;
+    }
+    h1{
+        text-shadow: 4px 3px 4px grey;
+    }
+</style>
+<body>
+    <div class="main">        
+        <div ><h1>Wolf's Den</h1></div>
+        <div class="boxes">
+            <div class="box1">
+                <div class="heading"><h3>New</h3>
+                </div>
+                <div class="img1">
+                    <img width="120px" height="120px" src="studimages.jpeg" alt="">
+                </div>
+                <div class="span1">
+                    <span>
+                        Ring
+                    </span>
+                    <span class="price">
+                        Price 90$
+                    </span>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="heading"><h3>New</h3>
+                </div>
+                <div class="img2">
+                    <img src="watchimages.jpeg" alt="">
+                </div>
+                <div class="span2">
+                    <span>Watch</span>
+                    <span class="price">Price 150$</span>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="heading"><h3>New</h3>
+                </div>
+                <div class="img3">
+                    <img src="Glasses.jpeg" alt="">
+                </div>
+                <div class="span3">
+                    <span>Glasses</span>
+                    <span class="price">Price 120$</span>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="heading">
+                    <h3>New</h3>
+                </div>
+                <div class="img4">
+                    <img src="nbelt.jpeg" alt="">
+                </div>
+                <div class="span4">
+                    <span>Belt</span>
+                    <span class="price">Price 150$</span>
+                </div>
+
+            </div>
+            <div class="box5">
+                <div class="heading">
+                    <h3>New</h3>
+                </div>
+                <div class="img5">
+                    <img src="chain.jpeg" alt="">
+                </div>
+                <div class="span5">
+                    <span>Chain</span>
+                    <span class="price">Price 80$</span>
+                </div>
+
+            </div>
+            <div class="box6">
+                <div class="heading">
+                    <h3>New</h3>
+                </div>
+                <div class="img6">
+                    <img src="boots.jpeg" alt="">
+                </div>
+                <div class="span6">
+                    <span>Boots</span>
+                    <span class="price">Price 250$</span>
+                </div>
+
+            </div>
+            <div class="box7">
+                <div class="heading">
+                    <h3>New</h3>
+                </div>
+                <div class="img7">
+                    <img src="jacket.jpg" alt="">
+                </div>
+                <div class="span7">
+                    <span>Jacket</span>
+                    <span class="price">Price 200$</span>
+                </div>
+            </div>
+            <div class="box8">
+                <div class="heading">
+                    <h3>New</h3>
+                </div>
+                <div class="img8">
+                    <img src="tshirt.jpeg" alt="">
+                </div>
+                <div class="span8">
+                    <span>T-Shirts</span>
+                    <span class="price">Price 10$</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn"><button>View All Products</button></div>
+     </div>
+</body>
+</html>
