@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsMania</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    /* CONTAINER */
+    .container{
+        border: 2px solid black;
+        width: 100%;
+        height: 900px;
+        background-image: url(Mustang.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* NAV */
+    nav, ul, li{
+        display: flex;
+        padding: 12px;
+        justify-content: space-between;
+        align-items: baseline;
+        color: whitesmoke;
+        font-size: 26px;
+    }
+    ul a{
+        text-decoration: none;
+    }
+    ul li{
+        margin: 0 20px;
+    }
+    .navinner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 26px;
+        color: whitesmoke;
+        margin-top: 100px;
+    } 
+.btn{
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #d4426e;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #da124e;
+  box-shadow: 0px 15px 20px rgba(229, 46, 77, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+    /* CENTERCON */
+    .centercon{ 
+        display: flex;
+        justify-content: space-evenly;
+        width: 1200px;
+        height: 300px;
+        position: relative;
+        margin-top: 150px;
+        margin-left: 200px;
+        background-color: white; 
+        z-index: 2; 
+        align-items: baseline;
+        box-shadow: 4px 4px 15px grey;
+    }
+    /* CENTERCON_INNER DIVS */
+    .first{
+        text-align: center;
+        width: 200px;
+        height: auto;
+        font-size: 25px;
+    }
+    select, option{
+        padding: 12px;
+        width: 160px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(241, 236, 236);
+    }
+    .second{
+        text-align: center;
+        width: 200px;
+        height: auto;
+        font-size: 25px;
+    }
+    .third{
+        text-align: center;
+        width: 200px;
+        height: auto;
+        font-size: 25px;
+    }
+    /* THIRDBOX */
+    .thirdbox{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        margin-top: 350px;
+    }
+    .third1{
+        border: 2px solid rgb(207, 202, 202);
+        border-radius: 5px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .third1>i{
+        font-size: 74px;
+    }
+    .third2{
+        border: 2px solid rgb(207, 202, 202);
+        border-radius: 5px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .third2>i{
+        font-size: 74px;
+    }
+    .third3{
+        border: 2px solid rgb(207, 202, 202);
+        border-radius: 5px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .third3>i{
+        font-size: 74px;
+    }
+    /* THIRDPARAS */
+    .third1 p,.third2 p,.third3 p{
+        color: rgb(143, 140, 140);
+    }
+    /* FOURTHBOX */
+    .fourth{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        background-color: rgb(245, 245, 245);
+    }
+    .fourthhead{
+        text-align: center;
+    }
+    .fourthhead >h1{
+       font-size: 46px;
+    }
+    .fourthcontent{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .fourth1{
+        width: 900px;
+        height: 500px;
+        align-items: center;
+    }
+    .fourth1 img{
+        height: 500px;
+        width: 900px;
+    }
+    .fourth2{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fourth2 h1{
+        color: rgb(87, 84, 84);
+    }
+    .fourth2>p{
+        font-size: 19px;
+    }
+    /* FIFTH */
+    .fifth{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        align-items: center;
+        text-align: center;
+    }
+    .fifthhead{
+        text-align: center;
+    }
+    .box{
+        width: 350px;
+        height: auto;
+        border: 1px solid #acabab;
+        border-radius: 8px;
+        
+    }
+    .fifthcars{
+        width: 1500px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .fifthpara{
+        color: grey;
+    }
+    /* CARBOXES */
+    .car1>img,.car2>img,.car3>img,.car4>img,.car5>img,.car6>img{
+        width: 250px;
+        height: 150px;
+        mix-blend-mode: multiply;
+    }
+    .car7>img,.car8>img{
+        align-content: center;
+        align-items: center;
+        width: 290px;
+        height: 160px;
+        mix-blend-mode: multiply;
+    }
+    .car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8{
+        transition: transform 1s ease-in-out;
+        will-change: transform; 
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+    .car1:hover,.car2:hover,.car3:hover,.car4:hover,.car5:hover,.car6:hover,.car7:hover,.car8:hover{
+        transform: scale(1.1);
+    }
+    /* SIXTH */
+    .sixth{
+        background-color: rgb(245, 242, 242);
+        margin-top: 200px;
+    }
+    .sixthhead{
+        text-align: center;
+    }
+    .sixthboxes{
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .sixth1,.sixth2,.sixth3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #bdb9b9;
+        width: 400px;
+        height: 400px;
+    }
+    .sixth1>img,.sixth2>img,.sixth3>img{
+        width: 90px;
+        height: 90px;
+        border-radius: 40px;
+        mix-blend-mode: multiply;
+    }
+    /* SEVENTH */
+    .seventh{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+    }
+    .seventhimgs>img{
+        mix-blend-mode: multiply;
+        width: 200px;
+        height: 190px;
+    }
+    /* EIGTH */
+    .eigth{
+        text-align: center;
+        background-color: rgb(211, 224, 236);
+    }
+    .eigthcontent{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .eigth1{
+        width: 300px;
+        height:300px;
+    }
+    .eigth2{
+        width: 300px;
+        height:300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .eigth2>span{
+        font-size: 19px;
+        color:black;
+        padding: 12px;
+        cursor: pointer;
+    }
+    .eigth3{
+        width: 300px;
+        height:300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .eigth3>span{
+        font-size: 19px;
+        color:black;
+        padding:5px;
+    }
+    .eigth4{
+        width: 300px;
+        height:300px;
+        /* border: 1px solid #000; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eigth4>input{
+        padding: 12px;
+        background-color:rgb(192, 200, 207) ;
+        border: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer a img{
+        width: 30px;
+        height: 30px;
+        mix-blend-mode: multiply;
+        border-radius: 15px;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navhead"><h1>CarVilla</h1></div>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Service</li></a>
+                <a href=""><li>Featured Cars</li></a>   
+                <a href=""><li>New Cars</li></a>
+                <a href=""><li>Brands</li></a>
+                <a href=""><li>Contacts</li></a>
+            </ul>
+        </nav>
+        <div class="navinner">
+        <h1>Get Your Desired Car In Reasonable Price</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta ipsum amet quae repudiandae, sint dolore quasi minus!</p>
+        <button class="btn">Contact Us</button>
+        </div>    
+        <div class="centercon">
+            <div class="first">
+                <h3>Select Year</h3>
+              <select>
+                <option value=""></option>
+                <option value="">2012</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2017</option>
+                <option value="">2019</option>
+              </select>
+                <h3>Body Style</h3>
+              <select>
+                <option value=""></option>
+                <option value="">SUV</option>
+                <option value="">Coupe</option>
+                <option value="">Hatchback</option>
+              </select>
+            </div>
+            <div class="second">
+                <h3>Select Make</h3>
+                <select>
+                    <option value=""></option>
+                    <option value="">Mustang</option>
+                    <option value="">Audi</option>
+                    <option value="">Jaguar</option>
+                    <option value="">Tesla</option>
+                    <option value="">Ferrari</option>
+                </select>
+                <h3>Car Condition</h3>
+                <select>
+                    <option value=""></option>
+                    <option value="">New</option>
+                    <option value="">Second Hand</option>
+                </select>
+            </div>
+            <div class="third">
+                <h3>Select Model</h3>
+                <select>
+                    <option value=""></option>
+                    <option value="">Latest</option>
+                    <option value="">Oldest</option>
+                </select>
+                <h3>Select Price</h3>
+                <select>
+                    <option value=""></option>
+                    <option value="">Affordable</option>
+                    <option value="">Negotiable</option>
+                </select>
+            </div>
+            <button class="btn">Search</button>
+        </div>
+    </div>
+    <div class="thirdbox">
+        <div class="third1">
+            <i class="fa-solid fa-car"></i>
+            <h1>Largest Dealership Of Cars</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum quis voluptates esse.</p>
+            <hr color="steelblue" width="49px">
+        </div>
+        <div class="third2">
+            <i class="fa-solid fa-car"></i>
+            <h1>Ultimate Repair waranty</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum quis voluptates esse.</p>
+            <hr color="steelblue" width="49px">
+        </div>
+        <div class="third3">
+            <i class="fa-solid fa-car"></i>
+            <h1>Insurance Support</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum quis voluptates esse.</p>
+            <hr color="steelblue" width="49px">
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="fourthhead">
+            <h3>Check out the latest cars</h3>
+            <h1>Newest Cars</h1><hr color="steelblue" width="100px">
+        </div>
+        <div class="fourthcontent">
+            <div class="fourth1">
+                <img src="fourth1.png" alt="Car Image">
+            </div>
+            <div class="fourth2">
+                <h1>Mustang Ford 1969</h1>
+                <p>1969 Ford Mustang Mach I.
+                    VEHICLE TYPE. front-engine, rear-wheel-drive, 4-passenger coupe.
+                    ENGINE TYPE. V-8, water-cooled, cast iron block and heads. Displacement: ...
+                    TRANSMISSION. 3-speed automatic.
+                    DIMENSIONS. Wheelbase: 108.0 in. Length: 187.4 in. ...
+                    C/D TEST RESULTS. Zero to 60 mph: 5.7 sec.</p>
+                <button class="btn">View Details</button>
+            </div>
+        </div> 
+    </div>
+    <div class="fifth">
+        <div class="fifthhead">
+            <h3>***Checkout the features Cars***</h3>
+            <h1>Featured Cars</h1><hr color="steelblue" width="100px">
+        </div>
+            <div class="fifthcars">
+            <div class="box car1">
+                <img src="mercedes.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2016  3100 Mi 240HP</p>
+                <p class="fifthpara">Automatic</p>
+                <h3>$125,000</h3>
+                <h3>Mercedes-Benz</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car2">
+                <img src="audir8 (2).jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2019  3100 Mi 240HP</p>
+                <p class="fifthpara">Automatic</p>
+                <h3>Audi R8</h3>
+                <h3>$250,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car3">
+                <img src="chevrolet.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Chevrolet Dodge</h3>
+                <h3>$110,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car4">
+                <img src="mustang1970.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Mustang 1970</h3>
+                <h3>$190,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car5">
+                <img src="ferrarigtb.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Ferarri GTB</h3>
+                <h3>$650,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car6">
+                <img src="teslatruck.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Tesla Truck</h3>
+                <h3>$80,000,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car7">
+                <img src="rollsroyce.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Rolls Royce</h3>
+                <h3>$90,000,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+            <div class="box car8">
+                <img src="gwagon.jpeg" alt="Image"><hr width="300px">
+                <p class="fifthpara">Model: 2015  3100 Mi 240HP</p>
+                <p class="fifthpara">Manual</p>
+                <h3>Ferarri GTB</h3>
+                <h3>$350,000</h3>
+                <p class="fifthpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut cumque nam, voluptatibus facere nemo doloremque sit dolorem!</p>
+            </div>
+        </div>
+    </div>
+    <div class="sixth">
+        <div class="sixthhead">
+            <h1>What Our Clients Say?</h1><hr color="steelblue" width="100px">
+        </div>
+        <div class="sixthboxes">
+            <div class="sixth1">
+                <img src="smilingmale.jpeg" alt="Image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit rerum, voluptatem, totam consequatur labore quas iure quasi praesentium animi, exercitationem pariatur cupiditate beatae fugit.</p>
+                <h2>Romi</h2>
+                <h2>Rain</h2>
+
+            </div>
+            <div class="sixth2">
+                <img src="smilingmale2.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit rerum, voluptatem, totam consequatur labore quas iure quasi praesentium animi, exercitationem pariatur cupiditate beatae fugit.</p>
+                <h2>John Dee</h2>
+                <h2>Washington</h2>
+            </div>
+            <div class="sixth3">
+                <img src="female.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit rerum, voluptatem, totam consequatur labore quas iure quasi praesentium animi, exercitationem pariatur cupiditate beatae fugit.</p>
+                <h2>Sarah</h2>
+                <h2>Marshal</h2>
+            </div>
+        </div>
+    </div>
+    <div class="seventh">
+        <div class="seventhimgs">
+            <img src="mercedeslogo.jpeg" alt="">
+            <img src="audilogo.png" alt="">
+            <img src="chevroletlogo.jpeg" alt="">
+            <img src="ferrari.png" alt="">
+            <img src="tesla.png" alt="">
+            <img src="rolls royce.png" alt="">
+            <img src="jaguar.jpeg" alt="">
+        </div>
+    </div>
+    <div class="eigth">
+        <div class="eigthcontent">
+            <div class="eigth1">
+                <h2>CarMania</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, ad? Pariatur beatae consequatur illo eum quod doloremque doloribus culpa quidem sit!</p>
+                <h4>info@themesin.com</h4>
+                <h4>+1(855)27647234</h4>
+            </div>
+            <div class="eigth2">
+                <h2>About Devloon</h2>
+                <span>About Us</span>
+                <span>Career</span>
+                <span>Terms Of Services</span>
+                <span>Privacy Policy</span>
+            </div>
+            <div class="eigth3">
+                <h2>Top Brands</h2>
+                <span>Mustang</span>
+                <span>Tesla</span>
+                <span>Rolls Royce</span>
+                <span>Jaguar</span>
+                <span>Chevrolet</span>
+                <span>Audi</span>
+            </div>
+            <div class="eigth4">
+                <h2>Newsletter</h2>
+                <p>Subscribe to get lates news and updates</p>
+                <input type="text" placeholder="Add Email">
+            </div>
+        </div>
+        <hr width="900px" color="steelblue">
+        <div class="footer">
+            <h3>Copyright&copy;,Designed and Developed By Nalain Haider&trade;</h3>
+            <span>
+                <a href="https://www.instagram.com">
+                    <img src="instalogo.jpeg" alt="">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="fblogo.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com">
+                    <img src="linkdin.png" alt=""></a>
+                <a href="https://twitter.com">
+                    <img src="twitterlogo.png" alt="">
+                </a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
